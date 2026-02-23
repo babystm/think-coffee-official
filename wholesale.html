@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wholesale — SYMMETRY</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wholesale-hero {
+            padding: 10rem 0 6rem;
+            text-align: center;
+        }
+
+        .wholesale-hero h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        .wholesale-hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form-section {
+            padding: 8rem 0;
+            background: white;
+            border-radius: 40px 40px 0 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            margin-bottom: 2rem;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus {
+            border-color: var(--accent);
+        }
+
+        .btn-submit {
+            background: #1a1a1a;
+            color: white;
+            width: 100%;
+            padding: 1.2rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn-submit:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><span></span>SYMMETRY</a>
+                <ul class="nav-links">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="concept.html">The Concept</a></li>
+                    <li><a href="index.html#journal">Journal</a></li>
+                    <li><a href="index.html#location">Location</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-primary">Find a Seat</button>
+                    <a href="#" class="cart-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                            <path d="M3 6h18" />
+                            <path d="M16 10a4 4 0 0 1-8 0" />
+                        </svg></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wholesale-hero container">
+            <span class="badge">Partner With Us</span>
+            <h1>Wholesale Program</h1>
+            <p>Bring the SYMMETRY experience to your office, hotel, or café. We provide curated beans, equipment, and
+                training.</p>
+        </div>
+
+        <section class="contact-form-section container">
+            <div class="form-container" data-reveal>
+                <form>
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Business Name</label>
+                        <input type="text" placeholder="Coffee shop, Office, etc." required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="email@business.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Tell us about your needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><span></span>SYMMETRY</div>
+                <p>Coffee for thinking people. A carefully curated space for focus, creativity, and the perfect brew.
+                </p>
+            </div>
+            <div class="footer-nav">
+                <div class="nav-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="concept.html">The Concept</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="wholesale.html">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="nav-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 SYMMETRY COFFEE STUDIO</p>
+            <p class="crafted">CRAFTED FOR FOCUS</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

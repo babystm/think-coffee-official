@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Concept — SYMMETRY</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .concept-hero {
+            padding: 10rem 0 6rem;
+            text-align: center;
+        }
+
+        .concept-hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .concept-hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .concept-section {
+            padding: 8rem 0;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .concept-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .concept-text p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .concept-image {
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+        }
+
+        .concept-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .concept-hero h1 {
+                font-size: 3rem;
+            }
+
+            .concept-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span></span>
+                    SYMMETRY
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="concept.html">The Concept</a></li>
+                    <li><a href="index.html#journal">Journal</a></li>
+                    <li><a href="index.html#location">Location</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="btn-primary">Find a Seat</button>
+                    <a href="#" class="cart-icon" aria-label="Shopping Bag">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                            <path d="M3 6h18" />
+                            <path d="M16 10a4 4 0 0 1-8 0" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="concept-hero container">
+            <span class="badge" data-reveal>Our Philosophy</span>
+            <h1 data-reveal class="delay-1">Designed for Focus</h1>
+            <p data-reveal class="delay-2">SYMMETRY was born from a simple observation: the modern world is too loud. We
+                created a space where silence is celebrated and coffee is the catalyst for clarity.</p>
+        </div>
+
+        <section class="concept-section container">
+            <div class="concept-grid">
+                <div class="concept-image" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800"
+                        alt="Minimalist Space">
+                </div>
+                <div class="concept-text" data-reveal class="delay-1">
+                    <h2>Japanese Minimalism Meets Scandinavian Hygge</h2>
+                    <p>Our aesthetic is a blend of two cultures that value simplicity, function, and natural materials.
+                        Every chair, table, and light fixture has been selected to minimize visual noise.</p>
+                    <p>We believe that when your environment is balanced, your mind can find its own symmetry. This is
+                        the foundation of everything we do.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="concept-section container" style="background: #fdf9f6;">
+            <div class="concept-grid">
+                <div class="concept-text" data-reveal>
+                    <h2>The Ritual of Slow Coffee</h2>
+                    <p>We don't do "fast" coffee. Every cup is a ritual. From the precision of the 4:6 drip method to
+                        the careful steaming of our milk, we take the time to ensure perfection.</p>
+                    <p>This intentionality invites our guests to slow down, taste the complexity of the beans, and
+                        breathe.</p>
+                </div>
+                <div class="concept-image" data-reveal class="delay-1">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=800"
+                        alt="Coffee Pour">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><span></span>SYMMETRY</div>
+                <p>Coffee for thinking people. A carefully curated space for focus, creativity, and the perfect brew.
+                </p>
+            </div>
+            <div class="footer-nav">
+                <div class="nav-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="concept.html">The Concept</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="wholesale.html">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="nav-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Join Us</h4>
+                <p>Newsletter for thinkers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 SYMMETRY COFFEE STUDIO</p>
+            <p class="crafted">CRAFTED FOR FOCUS</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
